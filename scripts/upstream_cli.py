@@ -4,9 +4,13 @@ This is a scaffolding/static-check launcher, NOT a host runtime compatibility te
 Usage: python scripts/upstream_cli.py /path/to/NEKO init|check|build ...
 """
 import importlib
+import os
 from pathlib import Path
 import sys
 import types
+
+sys.dont_write_bytecode = True
+os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
 
 root = Path(sys.argv.pop(1)).resolve()
 # Upstream plugin.__init__ eagerly starts importing the entire host stack.
