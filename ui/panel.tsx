@@ -1,4 +1,4 @@
-import {Alert, Button, Card, Field, Inline, Page, Stack, StatusBadge, Text, Textarea, useEffect, useRef, useState, useToast} from "@neko/plugin-ui"
+import {Alert, Button, Card, Field, FileDownload, Inline, Page, Stack, StatusBadge, Text, Textarea, useEffect, useRef, useState, useToast} from "@neko/plugin-ui"
 import type {PluginSurfaceProps} from "@neko/plugin-ui"
 
 type State = {
@@ -51,6 +51,12 @@ export default function Panel(props: PluginSurfaceProps<State>) {
     finally {setBusy(false)}
   }
   return <Page title={t("panel.title")} subtitle={t("panel.subtitle")}><Stack>
+    <Card title={t("guide.download_title")}><Stack>
+      <Text>{t("guide.download_help")}</Text>
+      <FileDownload href="https://github.com/qiguang113/n.e.k.o_plugin_neko_voice_bridge/releases" label={t("guide.download_button")} openExternal />
+      <Text>{t("guide.download_match")}</Text>
+      <Text>{t("guide.connect_step")}</Text>
+    </Stack></Card>
     <Card title={t("panel.pair_title")}><Stack>
       <Text>{t("panel.pair_help")}</Text>
       <Field label={t("panel.code")}><Textarea value={code} onChange={setCode} placeholder="http://127.0.0.1:18765/#token=…" /></Field>

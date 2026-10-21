@@ -52,5 +52,10 @@
   "panel.cable_ready": "输出线路：虚拟音频线已就绪（收集整句后发送）",
   "panel.cable_wait": "输出线路：虚拟音频线未就绪，请在 EXE 中选择并启用 CABLE Output",
   "panel.websocket_output": "输出线路：插件回复音频",
-  "panel.wake_disabled": "称呼过滤已关闭：无需叫名字即可回应频道发言；仍检查音轨来源和静音。可在 EXE 的“仅回应称呼”开关重新开启。免费语音仍共用本体会话。"
+  "panel.wake_disabled": "称呼过滤已关闭：无需叫名字即可回应频道发言；仍检查音轨来源和静音。可在 EXE 的“仅回应称呼”开关重新开启。免费语音仍共用本体会话。",
+  "guide.download_title": "Getting started · Download the voice bridge",
+  "guide.download_button": "Download Windows voice bridge EXE (GitHub Releases)",
+  "guide.download_help": "This plugin needs the separate voice bridge app. Open the download page, expand Assets, and download NekoVoiceBridge-Setup-…-x64.exe. Install and launch it; Python and Node.js are not required.",
+  "guide.download_match": "Choose a version compatible with your plugin and read its release notes. Install the EXE and .neko-plugin separately. GitHub Source code downloads are not installers.",
+  "guide.connect_step": "Copy the connection link from the EXE and save it in the connection panel below. Follow the EXE setup wizard to sign into KOOK, join a voice channel, and test audio."
 }
