@@ -13,7 +13,7 @@
 插件面板顶部的“新手教程”提供 Windows EXE 下载按钮，可直接打开本仓库 Releases。
 
 1. Windows 10/11 x64 用户下载并运行 `NekoVoiceBridge-Setup-0.7.1-x64.exe`。自带运行环境，无需安装 Node.js、Python 或浏览器。猫娘本体需另行安装。
-2. 下载独立的 `neko_voice_bridge-0.7.1.neko-plugin`，在猫娘插件管理器中导入，重启插件并确认面板版本为 0.7.1。
+2. 下载独立的 `neko_voice_bridge.neko-plugin`，在猫娘插件管理器中导入，重启插件并确认面板版本为 0.7.1。
 3. 在 EXE 复制连接链接，粘贴到插件连接面板并保存。无需调用插件入口；连接链接包含本机凭据，不要公开。
 4. 在 EXE 内登录给猫娘准备的 KOOK 账号，加入语音频道并开启麦克风，按配置向导测试声音。
 
