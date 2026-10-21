@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "electron app",
-    "test:plugin": "python -m unittest discover -s plugin/plugins/neko_voice_bridge/tests -v"
+    "test:plugin": "python -m unittest discover -s tests -v"
   },
   "devDependencies": {
     "electron": "44.4.4"

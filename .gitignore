@@ -10,3 +10,12 @@ bridge.json
 bridge.local.json
 *.log
 .DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+vendor/
+build/
+*.egg-info/
+store.db
+.env

@@ -5,9 +5,9 @@ Usage: python scripts/upstream_cli.py /path/to/NEKO init|check|build ...
 """
 import importlib
 import os
-from pathlib import Path
 import sys
 import types
+from pathlib import Path
 
 sys.dont_write_bytecode = True
 os.environ["PYTHONDONTWRITEBYTECODE"] = "1"

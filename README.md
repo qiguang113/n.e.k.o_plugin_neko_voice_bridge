@@ -33,7 +33,7 @@
 ## 源码与开发
 
 - `app/`：从原始 0.7.1 安装包提取的完整应用文件，29 个文件的 SHA-256 与留存构建清单一致。
-- `plugin/plugins/neko_voice_bridge/`：根据 0.7.1 开发记录恢复的插件源码，单独构建成标准 `.neko-plugin`。
+- 仓库根目录的 `plugin.toml`、Python 模块及 `ui/`、`i18n/`：根据 0.7.1 开发记录恢复的插件源码，单独构建成标准 `.neko-plugin`。
 - [版本来源与校验说明](docs/版本来源.md)：原始安装包与重新构建插件的区别。
 
 开发运行：安装 Node.js 后在仓库根目录执行 `npm install`、`npm start`。Python 插件需在 N.E.K.O 宿主中运行；其隔离测试可执行 `npm run test:plugin`。本仓库不包含猫娘本体或账号数据。
@@ -41,10 +41,14 @@
 插件构建参考上游提交 `cd17a21164ae5e734040042efd2b7cb810944e9f`：准备该版本猫娘源码及 CLI 依赖后，执行：
 
 ```sh
-python scripts/upstream_cli.py /path/to/N.E.K.O check plugin/plugins/neko_voice_bridge
-python scripts/upstream_cli.py /path/to/N.E.K.O build plugin/plugins/neko_voice_bridge -t dist
+python scripts/upstream_cli.py /path/to/N.E.K.O check --release .
+python scripts/upstream_cli.py /path/to/N.E.K.O build . -t dist
 ```
 
 该脚本调用上游 CLI 进行静态检查和打包，不启动本体，也不代表完整运行时兼容验证。安装版 EXE 为历史原包，本仓库没有宣称可逐字节复现其 Windows 安装器。
 
 Electron 及其第三方许可随安装包提供；N.E.K.O 和 VB-CABLE 分别遵循其自身许可。本项目不是 KOOK、VB-Audio 或 N.E.K.O 的官方产品。
+
+## 插件市场投稿
+
+仓库根目录包含 `plugin.toml`、插件入口 `__init__.py`、`ui/` 和 `i18n/`，符合独立插件仓库布局。`app/` 仅保存 EXE 源码，插件构建时排除它及开发资料。目录调整不改变 0.7.1 功能；历史 Release 附件保持不变。
