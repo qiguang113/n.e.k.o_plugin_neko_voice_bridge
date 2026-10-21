@@ -5,7 +5,7 @@ __pycache__/
 .local/
 dist/
 .env*
-settings.json
+/settings.json
 bridge.json
 bridge.local.json
 *.log
