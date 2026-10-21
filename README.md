@@ -2,7 +2,7 @@
 
 让 [N.E.K.O 猫娘计划](https://github.com/Project-N-E-K-O/N.E.K.O)进入 KOOK 语音频道，听取频道发言并把猫娘回复送回频道。此分支固定发布 **0.7.1**，面向一对一使用；未实现 OOPZ。
 
-**[下载 0.7.1 安装包和插件](https://github.com/qiguang113/neko-voice-bridge/releases/tag/v0.7.1)**
+**[下载 0.7.1 安装包和插件](https://github.com/qiguang113/n.e.k.o_plugin_neko_voice_bridge/releases/tag/v0.7.1)**
 
 ## 安装
 
